@@ -13,5 +13,5 @@ app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 
 app.listen(PORT, () => {
-  console.log(`server online at ${PORT}`);
+  console.log(`server online at ${PORT} http://localhost:${PORT}/`);
 });

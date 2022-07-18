@@ -1,5 +1,5 @@
 {
-  "userArray": [
+  "user": [
     {
       "title": "test 2",
       "text": "test 2",
@@ -9,6 +9,11 @@
       "title": "test 3",
       "text": "test 3",
       "id": "3"
+    },
+    {
+      "title": "",
+      "text": "",
+      "id": ""
     }
   ]
 }

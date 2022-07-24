@@ -7,17 +7,17 @@ router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html"));
 });
 
-router.get("./notes", (req, res) => {
+router.get("/notes", (req, res) => {
   if (!userArray) {
-    res.sendSend(404);
+    res.sendStatus(404);
   }
-  res.json(results);
+  res.json(userArray);
 });
 
 router.get("/notes/:id", (req, res) => {
   const postId = findNote(req.params.id, userArray);
   if (!postId) {
-    res.sendSend(404);
+    res.sendStatus(404);
   }
   res.json(postId);
 });
@@ -25,7 +25,6 @@ router.get("/notes/:id", (req, res) => {
 router.post("/notes", (req, res) => {
   req.body.id = uuid.v4();
   const input = newNote(req.body, userArray);
-  userArray.push(req.body);
   res.json(input);
 });
 

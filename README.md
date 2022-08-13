@@ -16,4 +16,4 @@ This app is to be used for taking personal notes that can be created, updated, o
 
 ## Deployed Application URL
 
-- https://lil-chevy.github.io/personal_note_taker/
+- https://quiet-atoll-98867.herokuapp.com/

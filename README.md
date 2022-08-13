@@ -1,6 +1,6 @@
 # Professional Note Taker
 
-![screenShot](./assets/images/)
+![screenShot](./assets/images/note_taker.png)
 
 ## Purpose
 

@@ -1,13 +1,14 @@
 const router = require("express").Router();
 const uuid = require("uuid");
 const { newNote, findNote, deleteNote } = require("../../lib/notes");
-const { userArray } = require("../../db/db.json");
+const userArray = require("../../db/db.json");
 
 router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html"));
 });
 
 router.get("/notes", (req, res) => {
+  console.log("<<<userarray>>>>", userArray);
   if (!userArray) {
     res.sendStatus(404);
   }
